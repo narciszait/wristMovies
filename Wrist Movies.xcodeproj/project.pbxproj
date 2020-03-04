@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC30F4CC2410281500B53457 /* Wrist Movies WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EC30F4CB2410281500B53457 /* Wrist Movies WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EC30F4D22410281500B53457 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC30F4D02410281500B53457 /* Interface.storyboard */; };
+		EC30F4D42410281800B53457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC30F4D32410281800B53457 /* Assets.xcassets */; };
+		EC30F4DB2410281900B53457 /* Wrist Movies WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EC30F4DA2410281900B53457 /* Wrist Movies WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EC30F4E02410281900B53457 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC30F4DF2410281900B53457 /* ContentView.swift */; };
+		EC30F4E22410281900B53457 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC30F4E12410281900B53457 /* HostingController.swift */; };
+		EC30F4E42410281900B53457 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC30F4E32410281900B53457 /* ExtensionDelegate.swift */; };
+		EC30F4E62410281900B53457 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC30F4E52410281900B53457 /* ComplicationController.swift */; };
+		EC30F4E82410281C00B53457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC30F4E72410281C00B53457 /* Assets.xcassets */; };
+		EC30F4EB2410281C00B53457 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC30F4EA2410281C00B53457 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC30F4CD2410281500B53457 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC30F4C12410281400B53457 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC30F4CA2410281500B53457;
+			remoteInfo = "Wrist Movies WatchKit App";
+		};
+		EC30F4DC2410281900B53457 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC30F4C12410281400B53457 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC30F4D92410281900B53457;
+			remoteInfo = "Wrist Movies WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EC30F4F22410281C00B53457 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EC30F4DB2410281900B53457 /* Wrist Movies WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC30F4F62410281C00B53457 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EC30F4CC2410281500B53457 /* Wrist Movies WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EC30F4C72410281400B53457 /* Wrist Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wrist Movies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC30F4CB2410281500B53457 /* Wrist Movies WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wrist Movies WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC30F4D12410281500B53457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		EC30F4D32410281800B53457 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC30F4D52410281800B53457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC30F4DA2410281900B53457 /* Wrist Movies WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Wrist Movies WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC30F4DF2410281900B53457 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EC30F4E12410281900B53457 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		EC30F4E32410281900B53457 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		EC30F4E52410281900B53457 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		EC30F4E72410281C00B53457 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC30F4EA2410281C00B53457 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EC30F4EC2410281C00B53457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC30F4D72410281900B53457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC30F4C02410281400B53457 = {
+			isa = PBXGroup;
+			children = (
+				EC30F4CF2410281500B53457 /* Wrist Movies WatchKit App */,
+				EC30F4DE2410281900B53457 /* Wrist Movies WatchKit Extension */,
+				EC30F4C82410281400B53457 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC30F4C82410281400B53457 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC30F4C72410281400B53457 /* Wrist Movies.app */,
+				EC30F4CB2410281500B53457 /* Wrist Movies WatchKit App.app */,
+				EC30F4DA2410281900B53457 /* Wrist Movies WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC30F4CF2410281500B53457 /* Wrist Movies WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				EC30F4D02410281500B53457 /* Interface.storyboard */,
+				EC30F4D32410281800B53457 /* Assets.xcassets */,
+				EC30F4D52410281800B53457 /* Info.plist */,
+			);
+			path = "Wrist Movies WatchKit App";
+			sourceTree = "<group>";
+		};
+		EC30F4DE2410281900B53457 /* Wrist Movies WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EC30F4DF2410281900B53457 /* ContentView.swift */,
+				EC30F4E12410281900B53457 /* HostingController.swift */,
+				EC30F4E32410281900B53457 /* ExtensionDelegate.swift */,
+				EC30F4E52410281900B53457 /* ComplicationController.swift */,
+				EC30F4E72410281C00B53457 /* Assets.xcassets */,
+				EC30F4EC2410281C00B53457 /* Info.plist */,
+				EC30F4E92410281C00B53457 /* Preview Content */,
+			);
+			path = "Wrist Movies WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		EC30F4E92410281C00B53457 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EC30F4EA2410281C00B53457 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC30F4C62410281400B53457 /* Wrist Movies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC30F4F72410281C00B53457 /* Build configuration list for PBXNativeTarget "Wrist Movies" */;
+			buildPhases = (
+				EC30F4C52410281400B53457 /* Resources */,
+				EC30F4F62410281C00B53457 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC30F4CE2410281500B53457 /* PBXTargetDependency */,
+			);
+			name = "Wrist Movies";
+			productName = "Wrist Movies";
+			productReference = EC30F4C72410281400B53457 /* Wrist Movies.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		EC30F4CA2410281500B53457 /* Wrist Movies WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC30F4F32410281C00B53457 /* Build configuration list for PBXNativeTarget "Wrist Movies WatchKit App" */;
+			buildPhases = (
+				EC30F4C92410281500B53457 /* Resources */,
+				EC30F4F22410281C00B53457 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC30F4DD2410281900B53457 /* PBXTargetDependency */,
+			);
+			name = "Wrist Movies WatchKit App";
+			productName = "Wrist Movies WatchKit App";
+			productReference = EC30F4CB2410281500B53457 /* Wrist Movies WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		EC30F4D92410281900B53457 /* Wrist Movies WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC30F4EF2410281C00B53457 /* Build configuration list for PBXNativeTarget "Wrist Movies WatchKit Extension" */;
+			buildPhases = (
+				EC30F4D62410281900B53457 /* Sources */,
+				EC30F4D72410281900B53457 /* Frameworks */,
+				EC30F4D82410281900B53457 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wrist Movies WatchKit Extension";
+			productName = "Wrist Movies WatchKit Extension";
+			productReference = EC30F4DA2410281900B53457 /* Wrist Movies WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC30F4C12410281400B53457 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Narcis Zait";
+				TargetAttributes = {
+					EC30F4C62410281400B53457 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					EC30F4CA2410281500B53457 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					EC30F4D92410281900B53457 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = EC30F4C42410281400B53457 /* Build configuration list for PBXProject "Wrist Movies" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC30F4C02410281400B53457;
+			productRefGroup = EC30F4C82410281400B53457 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC30F4C62410281400B53457 /* Wrist Movies */,
+				EC30F4CA2410281500B53457 /* Wrist Movies WatchKit App */,
+				EC30F4D92410281900B53457 /* Wrist Movies WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC30F4C52410281400B53457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC30F4C92410281500B53457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC30F4D42410281800B53457 /* Assets.xcassets in Resources */,
+				EC30F4D22410281500B53457 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC30F4D82410281900B53457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC30F4EB2410281C00B53457 /* Preview Assets.xcassets in Resources */,
+				EC30F4E82410281C00B53457 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC30F4D62410281900B53457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC30F4E22410281900B53457 /* HostingController.swift in Sources */,
+				EC30F4E62410281900B53457 /* ComplicationController.swift in Sources */,
+				EC30F4E02410281900B53457 /* ContentView.swift in Sources */,
+				EC30F4E42410281900B53457 /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC30F4CE2410281500B53457 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC30F4CA2410281500B53457 /* Wrist Movies WatchKit App */;
+			targetProxy = EC30F4CD2410281500B53457 /* PBXContainerItemProxy */;
+		};
+		EC30F4DD2410281900B53457 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC30F4D92410281900B53457 /* Wrist Movies WatchKit Extension */;
+			targetProxy = EC30F4DC2410281900B53457 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC30F4D02410281500B53457 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC30F4D12410281500B53457 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC30F4ED2410281C00B53457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC30F4EE2410281C00B53457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC30F4F02410281C00B53457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Wrist Movies WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = C5N5BYSRY5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Wrist Movies WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.narcis.Wrist-Movies.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		EC30F4F12410281C00B53457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Wrist Movies WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = C5N5BYSRY5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Wrist Movies WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.narcis.Wrist-Movies.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		EC30F4F42410281C00B53457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5N5BYSRY5;
+				IBSC_MODULE = Wrist_Movies_WatchKit_Extension;
+				INFOPLIST_FILE = "Wrist Movies WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.narcis.Wrist-Movies.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		EC30F4F52410281C00B53457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5N5BYSRY5;
+				IBSC_MODULE = Wrist_Movies_WatchKit_Extension;
+				INFOPLIST_FILE = "Wrist Movies WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.narcis.Wrist-Movies.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		EC30F4F82410281C00B53457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C5N5BYSRY5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.narcis.Wrist-Movies";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EC30F4F92410281C00B53457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C5N5BYSRY5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.narcis.Wrist-Movies";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC30F4C42410281400B53457 /* Build configuration list for PBXProject "Wrist Movies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC30F4ED2410281C00B53457 /* Debug */,
+				EC30F4EE2410281C00B53457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC30F4EF2410281C00B53457 /* Build configuration list for PBXNativeTarget "Wrist Movies WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC30F4F02410281C00B53457 /* Debug */,
+				EC30F4F12410281C00B53457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC30F4F32410281C00B53457 /* Build configuration list for PBXNativeTarget "Wrist Movies WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC30F4F42410281C00B53457 /* Debug */,
+				EC30F4F52410281C00B53457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC30F4F72410281C00B53457 /* Build configuration list for PBXNativeTarget "Wrist Movies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC30F4F82410281C00B53457 /* Debug */,
+				EC30F4F92410281C00B53457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC30F4C12410281400B53457 /* Project object */;
+}
