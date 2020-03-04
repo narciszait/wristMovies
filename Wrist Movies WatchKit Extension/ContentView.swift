@@ -8,9 +8,23 @@
 
 import SwiftUI
 
+var array: [Int] = [1, 2, 3, 4, 5, 6, 7]
+
 struct ContentView: View {
+    @State var scrollAmount = 0.5
+    
     var body: some View {
-        Text("Hello, World!")
+        List {
+            ForEach(array, id: \.self) {number in
+                Text(String(number))
+                    .multilineTextAlignment(.leading)
+                    .padding(20.0)
+            }
+            .padding(.all, 15.0)
+        }
+        .listStyle(CarouselListStyle())
+        .focusable(true)
+        .digitalCrownRotation($scrollAmount, from: 0, through: 5, by: 0.1, sensitivity: .low, isContinuous: true, isHapticFeedbackEnabled: true)
     }
 }
 
