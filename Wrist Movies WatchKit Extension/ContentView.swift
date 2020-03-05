@@ -17,10 +17,10 @@ struct ContentView: View {
         List {
             ForEach(array, id: \.self) {number in
                 Text(String(number))
-                    .multilineTextAlignment(.leading)
-                    .padding(20.0)
+                    .multilineTextAlignment(.center)
+                    .lineLimit(3)
+                    .padding(.all, 40.0)
             }
-            .padding(.all, 15.0)
         }
         .listStyle(CarouselListStyle())
         .focusable(true)
