@@ -19,6 +19,8 @@
 		EC30F4EB2410281C00B53457 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC30F4EA2410281C00B53457 /* Preview Assets.xcassets */; };
 		EC30F4FC2410F40800B53457 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC30F4FB2410F40700B53457 /* NetworkManager.swift */; };
 		EC30F4FF241104B600B53457 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC30F4FE241104B600B53457 /* Movie.swift */; };
+		ECDB9FAA2411571A00791DDB /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDB9FA92411571A00791DDB /* MovieViewModel.swift */; };
+		ECDB9FAC241157E600791DDB /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDB9FAB241157E600791DDB /* MovieListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		EC30F4EC2410281C00B53457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC30F4FB2410F40700B53457 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		EC30F4FE241104B600B53457 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		ECDB9FA92411571A00791DDB /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		ECDB9FAB241157E600791DDB /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,7 @@
 		EC30F4DE2410281900B53457 /* Wrist Movies WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				ECDB9FA82411570900791DDB /* ViewModel */,
 				EC30F4FD241104A900B53457 /* Models */,
 				EC30F4FA2410F3F300B53457 /* Network Manager */,
 				EC30F4DF2410281900B53457 /* ContentView.swift */,
@@ -159,6 +164,15 @@
 				EC30F4FE241104B600B53457 /* Movie.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		ECDB9FA82411570900791DDB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ECDB9FA92411571A00791DDB /* MovieViewModel.swift */,
+				ECDB9FAB241157E600791DDB /* MovieListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,8 +306,10 @@
 				EC30F4E22410281900B53457 /* HostingController.swift in Sources */,
 				EC30F4E62410281900B53457 /* ComplicationController.swift in Sources */,
 				EC30F4FF241104B600B53457 /* Movie.swift in Sources */,
+				ECDB9FAC241157E600791DDB /* MovieListViewModel.swift in Sources */,
 				EC30F4FC2410F40800B53457 /* NetworkManager.swift in Sources */,
 				EC30F4E02410281900B53457 /* ContentView.swift in Sources */,
+				ECDB9FAA2411571A00791DDB /* MovieViewModel.swift in Sources */,
 				EC30F4E42410281900B53457 /* ExtensionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -25,6 +25,23 @@ struct ContentView: View {
         .listStyle(CarouselListStyle())
         .focusable(true)
         .digitalCrownRotation($scrollAmount, from: 0, through: 5, by: 0.1, sensitivity: .low, isContinuous: true, isHapticFeedbackEnabled: true)
+        .onAppear {
+//            let movieModel = MovieListViewModel()
+//            movieModel.fetchAllNewMovies()
+//            print(movieModel.movies)
+//            print("---- \( movieModel.fetchAllNewMovies())")
+//            NetworkManager().getNewestMoviews { (result) in
+//                       DispatchQueue.main.async {
+//                           switch result {
+//                           case .success(let movies):
+//                               print(movies)
+//                           case .failure(let error):
+//                            print(error.localizedDescription)
+//                           }
+//                       }
+//            }
+            print("hello")
+        }
     }
 }
 

@@ -9,7 +9,7 @@
 import Foundation
 
 // MARK: - MovieElement
-struct MovieElement: Codable {
+struct Movie: Codable {
     let title, releasedate, studio: String?
     let poster, poster2X: String?
     let moviesite: String?
@@ -54,5 +54,3 @@ struct Trailer: Codable {
     let postdate, url, type: String?
     let exclusive, hd: Bool?
 }
-
-typealias Movie = [MovieElement]

@@ -14,8 +14,8 @@ enum NetworkError: Error {
     case decodingError
 }
 
-let baseURL = "http://trailers.apple.com/trailers/"
-let newestMoviesURL = "http://trailers.apple.com/trailers/home/feeds/just_added.json"
+let baseURL = "https://trailers.apple.com/trailers/"
+let newestMoviesURL = "https://trailers.apple.com/trailers/home/feeds/just_added.json"
 
 class NetworkManager {
     func getNewestMoviews(completion: @escaping (Result<[Movie], NetworkError>) -> Void) {
