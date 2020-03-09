@@ -16,10 +16,21 @@ struct ContentView: View {
     var body: some View {
         List {
             ForEach(array, id: \.self) {number in
-                Text(String(number))
-                    .multilineTextAlignment(.center)
-                    .lineLimit(3)
-                    .padding(.all, 40.0)
+                HStack {
+                    Image("poster")
+                        .resizable()
+                        .scaledToFit()
+                        .clipShape(RoundedRectangle(cornerRadius: 5))
+                        .frame(width: 80, height: 80)
+                    Spacer()
+                    VStack {
+                        Text(String(number))
+                            .font(.title)
+                        .multilineTextAlignment(.center)
+                        .lineLimit(3)
+//                        .padding(.all, 40.0)
+                    }
+                }.padding(.all, 10)
             }
         }
         .listStyle(CarouselListStyle())

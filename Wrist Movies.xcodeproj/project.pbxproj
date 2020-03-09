@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -191,6 +191,10 @@
 				EC30F4CE2410281500B53457 /* PBXTargetDependency */,
 			);
 			name = "Wrist Movies";
+			packageProductDependencies = (
+				EC3E9CCD241658D2004F2A06 /* KingfisherSwiftUI */,
+				EC3E9CCE241658D2004F2A06 /* Kingfisher */,
+			);
 			productName = "Wrist Movies";
 			productReference = EC30F4C72410281400B53457 /* Wrist Movies.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
@@ -259,6 +263,9 @@
 				Base,
 			);
 			mainGroup = EC30F4C02410281400B53457;
+			packageReferences = (
+				EC3E9CCC241658D2004F2A06 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = EC30F4C82410281400B53457 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -605,6 +612,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC3E9CCC241658D2004F2A06 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.13.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC3E9CCD241658D2004F2A06 /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC3E9CCC241658D2004F2A06 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+		EC3E9CCE241658D2004F2A06 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC3E9CCC241658D2004F2A06 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EC30F4C12410281400B53457 /* Project object */;
 }
