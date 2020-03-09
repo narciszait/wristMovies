@@ -39,6 +39,7 @@ enum Genre: String, Codable {
     case romance = "Romance"
     case scienceFiction = "Science Fiction"
     case thriller = "Thriller"
+    case musical = "Musical"
 }
 
 enum Rating: String, Codable {

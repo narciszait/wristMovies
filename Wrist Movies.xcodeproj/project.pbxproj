@@ -19,6 +19,7 @@
 		EC30F4EB2410281C00B53457 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC30F4EA2410281C00B53457 /* Preview Assets.xcassets */; };
 		EC30F4FC2410F40800B53457 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC30F4FB2410F40700B53457 /* NetworkManager.swift */; };
 		EC30F4FF241104B600B53457 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC30F4FE241104B600B53457 /* Movie.swift */; };
+		ECBE35262416C64400CBB7C2 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBE35252416C64400CBB7C2 /* MovieListView.swift */; };
 		ECDB9FAA2411571A00791DDB /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDB9FA92411571A00791DDB /* MovieViewModel.swift */; };
 		ECDB9FAC241157E600791DDB /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDB9FAB241157E600791DDB /* MovieListViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -81,6 +82,7 @@
 		EC30F4EC2410281C00B53457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC30F4FB2410F40700B53457 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		EC30F4FE241104B600B53457 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		ECBE35252416C64400CBB7C2 /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
 		ECDB9FA92411571A00791DDB /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		ECDB9FAB241157E600791DDB /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -171,6 +173,7 @@
 			children = (
 				ECDB9FA92411571A00791DDB /* MovieViewModel.swift */,
 				ECDB9FAB241157E600791DDB /* MovieListViewModel.swift */,
+				ECBE35252416C64400CBB7C2 /* MovieListView.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -188,12 +191,15 @@
 			buildRules = (
 			);
 			dependencies = (
+				ECBE353324170B5B00CBB7C2 /* PBXTargetDependency */,
+				ECBE353524170B5B00CBB7C2 /* PBXTargetDependency */,
 				EC30F4CE2410281500B53457 /* PBXTargetDependency */,
 			);
 			name = "Wrist Movies";
 			packageProductDependencies = (
-				EC3E9CCD241658D2004F2A06 /* KingfisherSwiftUI */,
-				EC3E9CCE241658D2004F2A06 /* Kingfisher */,
+				ECBE352C24170B3200CBB7C2 /* Kingfisher */,
+				ECBE352D24170B3200CBB7C2 /* KingfisherSwiftUI */,
+				ECBE353724170CA300CBB7C2 /* SwURL */,
 			);
 			productName = "Wrist Movies";
 			productReference = EC30F4C72410281400B53457 /* Wrist Movies.app */;
@@ -209,6 +215,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				ECBE352F24170B4A00CBB7C2 /* PBXTargetDependency */,
+				ECBE353124170B4A00CBB7C2 /* PBXTargetDependency */,
 				EC30F4DD2410281900B53457 /* PBXTargetDependency */,
 			);
 			name = "Wrist Movies WatchKit App";
@@ -264,7 +272,8 @@
 			);
 			mainGroup = EC30F4C02410281400B53457;
 			packageReferences = (
-				EC3E9CCC241658D2004F2A06 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				ECBE352B24170B3200CBB7C2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				ECBE353624170CA300CBB7C2 /* XCRemoteSwiftPackageReference "SwURL" */,
 			);
 			productRefGroup = EC30F4C82410281400B53457 /* Products */;
 			projectDirPath = "";
@@ -312,6 +321,7 @@
 			files = (
 				EC30F4E22410281900B53457 /* HostingController.swift in Sources */,
 				EC30F4E62410281900B53457 /* ComplicationController.swift in Sources */,
+				ECBE35262416C64400CBB7C2 /* MovieListView.swift in Sources */,
 				EC30F4FF241104B600B53457 /* Movie.swift in Sources */,
 				ECDB9FAC241157E600791DDB /* MovieListViewModel.swift in Sources */,
 				EC30F4FC2410F40800B53457 /* NetworkManager.swift in Sources */,
@@ -333,6 +343,22 @@
 			isa = PBXTargetDependency;
 			target = EC30F4D92410281900B53457 /* Wrist Movies WatchKit Extension */;
 			targetProxy = EC30F4DC2410281900B53457 /* PBXContainerItemProxy */;
+		};
+		ECBE352F24170B4A00CBB7C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = ECBE352E24170B4A00CBB7C2 /* Kingfisher */;
+		};
+		ECBE353124170B4A00CBB7C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = ECBE353024170B4A00CBB7C2 /* KingfisherSwiftUI */;
+		};
+		ECBE353324170B5B00CBB7C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = ECBE353224170B5B00CBB7C2 /* Kingfisher */;
+		};
+		ECBE353524170B5B00CBB7C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = ECBE353424170B5B00CBB7C2 /* KingfisherSwiftUI */;
 		};
 /* End PBXTargetDependency section */
 
@@ -614,26 +640,59 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		EC3E9CCC241658D2004F2A06 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		ECBE352B24170B3200CBB7C2 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.13.2;
+				minimumVersion = 5.13.1;
+			};
+		};
+		ECBE353624170CA300CBB7C2 /* XCRemoteSwiftPackageReference "SwURL" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cmtrounce/SwURL";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EC3E9CCD241658D2004F2A06 /* KingfisherSwiftUI */ = {
+		ECBE352C24170B3200CBB7C2 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EC3E9CCC241658D2004F2A06 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			package = ECBE352B24170B3200CBB7C2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		ECBE352D24170B3200CBB7C2 /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECBE352B24170B3200CBB7C2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = KingfisherSwiftUI;
 		};
-		EC3E9CCE241658D2004F2A06 /* Kingfisher */ = {
+		ECBE352E24170B4A00CBB7C2 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EC3E9CCC241658D2004F2A06 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			package = ECBE352B24170B3200CBB7C2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		ECBE353024170B4A00CBB7C2 /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECBE352B24170B3200CBB7C2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+		ECBE353224170B5B00CBB7C2 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECBE352B24170B3200CBB7C2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		ECBE353424170B5B00CBB7C2 /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECBE352B24170B3200CBB7C2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+		ECBE353724170CA300CBB7C2 /* SwURL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECBE353624170CA300CBB7C2 /* XCRemoteSwiftPackageReference "SwURL" */;
+			productName = SwURL;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

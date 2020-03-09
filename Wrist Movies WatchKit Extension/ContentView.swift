@@ -8,51 +8,9 @@
 
 import SwiftUI
 
-var array: [Int] = [1, 2, 3, 4, 5, 6, 7]
-
 struct ContentView: View {
-    @State var scrollAmount = 0.5
-    
     var body: some View {
-        List {
-            ForEach(array, id: \.self) {number in
-                HStack {
-                    Image("poster")
-                        .resizable()
-                        .scaledToFit()
-                        .clipShape(RoundedRectangle(cornerRadius: 5))
-                        .frame(width: 80, height: 80)
-                    Spacer()
-                    VStack {
-                        Text(String(number))
-                            .font(.title)
-                        .multilineTextAlignment(.center)
-                        .lineLimit(3)
-//                        .padding(.all, 40.0)
-                    }
-                }.padding(.all, 10)
-            }
-        }
-        .listStyle(CarouselListStyle())
-        .focusable(true)
-        .digitalCrownRotation($scrollAmount, from: 0, through: 5, by: 0.1, sensitivity: .low, isContinuous: true, isHapticFeedbackEnabled: true)
-        .onAppear {
-//            let movieModel = MovieListViewModel()
-//            movieModel.fetchAllNewMovies()
-//            print(movieModel.movies)
-//            print("---- \( movieModel.fetchAllNewMovies())")
-//            NetworkManager().getNewestMoviews { (result) in
-//                       DispatchQueue.main.async {
-//                           switch result {
-//                           case .success(let movies):
-//                               print(movies)
-//                           case .failure(let error):
-//                            print(error.localizedDescription)
-//                           }
-//                       }
-//            }
-            print("hello")
-        }
+        MovieListView()
     }
 }
 

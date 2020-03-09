@@ -14,26 +14,30 @@ enum NetworkError: Error {
     case decodingError
 }
 
-let baseURL = "https://trailers.apple.com/trailers/"
+let baseURL = "http://trailers.apple.com/trailers/"
 let newestMoviesURL = "https://trailers.apple.com/trailers/home/feeds/just_added.json"
 
 class NetworkManager {
     func getNewestMoviews(completion: @escaping (Result<[Movie], NetworkError>) -> Void) {
-        guard let url = URL(string: baseURL) else {
+        guard let url = URL(string: newestMoviesURL) else {
             completion(.failure(.invalidURL))
             return
         }
         
-        URLSession.shared.dataTask(with: url) {data, response, error in
-        guard let data = data, error == nil else {
-            completion(.failure(.unknownError))
-            return
-        }
+        var request = URLRequest(url: url)
+        request.setValue("application/json", forHTTPHeaderField: "Accept")
+        request.httpMethod = "GET"
+        
+        URLSession.shared.dataTask(with: request) {data, response, error in
+            guard let data = data, error == nil else {
+                completion(.failure(.unknownError))
+                return
+            }
+                
+            print(String(data: data, encoding: .utf8)!)
             
-//        let movies = try? JSONDecoder.decode([Movie].self, from: data)
-            let decoder = JSONDecoder()
-            let movies = try? decoder.decode([Movie].self , from: data)
-        movies == nil ? completion(.failure(.decodingError)) : completion(.success(movies!))
+            let movies = try? JSONDecoder().decode([Movie].self, from: data)
+            movies == nil ? completion(.failure(.decodingError)) : completion(.success(movies!))
         }.resume()
     }
     

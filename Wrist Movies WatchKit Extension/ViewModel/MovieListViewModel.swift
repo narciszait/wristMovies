@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import Combine
 
-class MovieListViewModel {
-    var movies = [MovieViewModel]()
+class MovieListViewModel: ObservableObject {
+    @Published var movies = [MovieViewModel]()
     
     func fetchAllNewMovies() {
         NetworkManager().getNewestMoviews { (result) in
