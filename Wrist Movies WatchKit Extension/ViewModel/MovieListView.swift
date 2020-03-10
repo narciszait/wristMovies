@@ -9,7 +9,6 @@
 import SwiftUI
 import Combine
 import KingfisherSwiftUI
-//import SwURL
 
 struct MovieListView: View {
     @ObservedObject var ​movieListVM = MovieListViewModel()
@@ -25,7 +24,6 @@ struct MovieListView: View {
         List(​movieListVM.movies, id:\.title) { movie in
             HStack {
 //                Image("poster")
-//                RemoteImageView(url: movie.poster)
                 KFImage(URL(string: movie.poster)!)
                 .resizable()
                 .scaledToFit()
