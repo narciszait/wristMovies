@@ -8,7 +8,7 @@
 
 import SwiftUI
 import Combine
-import KingfisherSwiftUI
+//import KingfisherSwiftUI
 
 struct MovieListView: View {
     @ObservedObject var ​movieListVM = MovieListViewModel()
@@ -23,8 +23,8 @@ struct MovieListView: View {
     var body: some View {
         List(​movieListVM.movies, id:\.title) { movie in
             HStack {
-//                Image("poster")
-                KFImage(URL(string: movie.poster)!)
+                Image("poster")
+//                KFImage(URL(string: movie.poster)!)
                 .resizable()
                 .scaledToFit()
                 .clipShape(RoundedRectangle(cornerRadius: 5))
