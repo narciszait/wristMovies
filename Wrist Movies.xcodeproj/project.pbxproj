@@ -20,6 +20,7 @@
 		EC30F4FC2410F40800B53457 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC30F4FB2410F40700B53457 /* NetworkManager.swift */; };
 		EC30F4FF241104B600B53457 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC30F4FE241104B600B53457 /* Movie.swift */; };
 		ECBE35262416C64400CBB7C2 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBE35252416C64400CBB7C2 /* MovieListView.swift */; };
+		ECC051232417F0010039439D /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = ECC051222417F0010039439D /* KingfisherSwiftUI */; };
 		ECDB9FAA2411571A00791DDB /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDB9FA92411571A00791DDB /* MovieViewModel.swift */; };
 		ECDB9FAC241157E600791DDB /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDB9FAB241157E600791DDB /* MovieListViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -32,7 +33,7 @@
 			remoteGlobalIDString = EC30F4CA2410281500B53457;
 			remoteInfo = "Wrist Movies WatchKit App";
 		};
-		EC30F4DC2410281900B53457 /* PBXContainerItemProxy */ = {
+		ECC0511F2417ED1A0039439D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EC30F4C12410281400B53457 /* Project object */;
 			proxyType = 1;
@@ -92,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECC051232417F0010039439D /* KingfisherSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +106,7 @@
 				EC30F4CF2410281500B53457 /* Wrist Movies WatchKit App */,
 				EC30F4DE2410281900B53457 /* Wrist Movies WatchKit Extension */,
 				EC30F4C82410281400B53457 /* Products */,
+				ECC051212417F0010039439D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +137,7 @@
 				EC30F4FD241104A900B53457 /* Models */,
 				EC30F4FA2410F3F300B53457 /* Network Manager */,
 				EC30F4DF2410281900B53457 /* ContentView.swift */,
+				ECBE35252416C64400CBB7C2 /* MovieListView.swift */,
 				EC30F4E12410281900B53457 /* HostingController.swift */,
 				EC30F4E32410281900B53457 /* ExtensionDelegate.swift */,
 				EC30F4E52410281900B53457 /* ComplicationController.swift */,
@@ -168,12 +172,18 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		ECC051212417F0010039439D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ECDB9FA82411570900791DDB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				ECDB9FA92411571A00791DDB /* MovieViewModel.swift */,
 				ECDB9FAB241157E600791DDB /* MovieListViewModel.swift */,
-				ECBE35252416C64400CBB7C2 /* MovieListView.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -210,12 +220,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				EC30F4DD2410281900B53457 /* PBXTargetDependency */,
+				ECC051202417ED1A0039439D /* PBXTargetDependency */,
 			);
 			name = "Wrist Movies WatchKit App";
 			packageProductDependencies = (
-				EC862D7424171195000BE48F /* Kingfisher */,
-				EC862D7524171195000BE48F /* KingfisherSwiftUI */,
+				ECC0511C2417ECBD0039439D /* KingfisherSwiftUI */,
 			);
 			productName = "Wrist Movies WatchKit App";
 			productReference = EC30F4CB2410281500B53457 /* Wrist Movies WatchKit App.app */;
@@ -234,6 +243,9 @@
 			dependencies = (
 			);
 			name = "Wrist Movies WatchKit Extension";
+			packageProductDependencies = (
+				ECC051222417F0010039439D /* KingfisherSwiftUI */,
+			);
 			productName = "Wrist Movies WatchKit Extension";
 			productReference = EC30F4DA2410281900B53457 /* Wrist Movies WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -269,7 +281,7 @@
 			);
 			mainGroup = EC30F4C02410281400B53457;
 			packageReferences = (
-				EC862D7324171195000BE48F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				ECC0511B2417ECBD0039439D /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = EC30F4C82410281400B53457 /* Products */;
 			projectDirPath = "";
@@ -335,10 +347,10 @@
 			target = EC30F4CA2410281500B53457 /* Wrist Movies WatchKit App */;
 			targetProxy = EC30F4CD2410281500B53457 /* PBXContainerItemProxy */;
 		};
-		EC30F4DD2410281900B53457 /* PBXTargetDependency */ = {
+		ECC051202417ED1A0039439D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EC30F4D92410281900B53457 /* Wrist Movies WatchKit Extension */;
-			targetProxy = EC30F4DC2410281900B53457 /* PBXContainerItemProxy */;
+			targetProxy = ECC0511F2417ED1A0039439D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -620,7 +632,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		EC862D7324171195000BE48F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		ECC0511B2417ECBD0039439D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/narciszait/Kingfisher";
 			requirement = {
@@ -631,14 +643,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EC862D7424171195000BE48F /* Kingfisher */ = {
+		ECC0511C2417ECBD0039439D /* KingfisherSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EC862D7324171195000BE48F /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
+			package = ECC0511B2417ECBD0039439D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
 		};
-		EC862D7524171195000BE48F /* KingfisherSwiftUI */ = {
+		ECC051222417F0010039439D /* KingfisherSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EC862D7324171195000BE48F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			package = ECC0511B2417ECBD0039439D /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = KingfisherSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
