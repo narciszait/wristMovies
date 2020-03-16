@@ -8,6 +8,8 @@
 
 import Foundation
 
+//this is the model for the json coming from the server
+
 // MARK: - MovieElement
 struct Movie: Codable {
     let title, releasedate, studio: String?

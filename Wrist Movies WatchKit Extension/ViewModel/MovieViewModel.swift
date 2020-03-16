@@ -8,6 +8,8 @@
 
 import Foundation
 
+//this is used in the app to show the list of new trailers/movies
+//this could be in the same file as MovieListViewModel
 struct MovieViewModel {
     let movie: Movie
     
