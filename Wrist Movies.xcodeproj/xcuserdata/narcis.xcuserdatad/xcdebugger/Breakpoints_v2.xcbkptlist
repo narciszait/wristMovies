@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "8BDA9925-BF77-4C75-8686-D06F999D8603"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0B09D2E8-17E3-4204-9F57-1E449DA0CC84"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Wrist Movies WatchKit Extension/Network Manager/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "getNewestMoviews(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0B09D2E8-17E3-4204-9F57-1E449DA0CC84 - 7e41f6b835e851f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Wrist_Movies_WatchKit_Extension.NetworkManager.getNewestMoviews(completion: (Swift.Result&lt;Swift.Array&lt;Wrist_Movies_WatchKit_Extension.Movie&gt;, Wrist_Movies_WatchKit_Extension.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Wrist Movies WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narcis/git/Narcis/Wrist%20Movies/Wrist%20Movies%20WatchKit%20Extension/Network%20Manager/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "1096">
+               </Location>
+               <Location
+                  uuid = "0B09D2E8-17E3-4204-9F57-1E449DA0CC84 - ac128721e285420c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Wrist_Movies_WatchKit_Extension.NetworkManager.getNewestMoviews(completion: (Swift.Result&lt;Swift.Array&lt;Wrist_Movies_WatchKit_Extension.Movie&gt;, Wrist_Movies_WatchKit_Extension.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Wrist Movies WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narcis/git/Narcis/Wrist%20Movies/Wrist%20Movies%20WatchKit%20Extension/Network%20Manager/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "256">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BD110428-1728-4DA8-A5B9-6C934F402FA4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Wrist Movies WatchKit Extension/Network Manager/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "getNewestMoviews(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9405206E-7ECF-4A06-8762-EE9B3C50676A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Wrist Movies WatchKit Extension/ViewModel/MovieListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AAEF5BBB-5FCE-4859-BC8F-BDDC7E6EA74C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Wrist Movies WatchKit Extension/ViewModel/MovieListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "fetchAllNewMovies()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "82464630-4925-4DD0-9747-CEC57FFBEFCF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Wrist Movies WatchKit Extension/ViewModel/MovieListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "fetchAllNewMovies()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "82464630-4925-4DD0-9747-CEC57FFBEFCF - 8ae6b8fa9ca7c37a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Wrist_Movies_WatchKit_Extension.MovieListViewModel.fetchAllNewMovies() -&gt; ()"
+                  moduleName = "Wrist Movies WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narcis/git/Narcis/Wrist%20Movies/Wrist%20Movies%20WatchKit%20Extension/ViewModel/MovieListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "82464630-4925-4DD0-9747-CEC57FFBEFCF - 7c932bc7285c3944"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;Wrist_Movies_WatchKit_Extension.Movie&gt;, Wrist_Movies_WatchKit_Extension.NetworkError&gt;) -&gt; () in Wrist_Movies_WatchKit_Extension.MovieListViewModel.fetchAllNewMovies() -&gt; ()"
+                  moduleName = "Wrist Movies WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narcis/git/Narcis/Wrist%20Movies/Wrist%20Movies%20WatchKit%20Extension/ViewModel/MovieListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "196">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5ABF2A9E-085A-4A89-8833-CD1EC0D09075"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Wrist Movies WatchKit Extension/ViewModel/MovieListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "fetchAllNewMovies()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5ABF2A9E-085A-4A89-8833-CD1EC0D09075 - 6016b815b56aa36b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;Wrist_Movies_WatchKit_Extension.Movie&gt;, Wrist_Movies_WatchKit_Extension.NetworkError&gt;) -&gt; () in Wrist_Movies_WatchKit_Extension.MovieListViewModel.fetchAllNewMovies() -&gt; ()"
+                  moduleName = "Wrist Movies WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narcis/git/Narcis/Wrist%20Movies/Wrist%20Movies%20WatchKit%20Extension/ViewModel/MovieListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "5ABF2A9E-085A-4A89-8833-CD1EC0D09075 - 6016b815b56aa36b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;Wrist_Movies_WatchKit_Extension.Movie&gt;, Wrist_Movies_WatchKit_Extension.NetworkError&gt;) -&gt; () in Wrist_Movies_WatchKit_Extension.MovieListViewModel.fetchAllNewMovies() -&gt; ()"
+                  moduleName = "Wrist Movies WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narcis/git/Narcis/Wrist%20Movies/Wrist%20Movies%20WatchKit%20Extension/ViewModel/MovieListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

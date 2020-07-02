@@ -14,8 +14,6 @@ struct MovieListView: View {
     @ObservedObject var ​movieListVM = MovieListViewModel()
     @State var scrollAmount = 0.5
     
-    
-    
     init() {
         self.​movieListVM.fetchAllNewMovies()
     }
